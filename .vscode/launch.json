@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "OpenFibonacci index.html",
+            "file": "/Users/robby/VSCodeProjects/ProjectEulerChallenges/EvenFibonacciNumbers/index.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "OpenMultiples index.html",
+            "file": "/Users/robby/VSCodeProjects/ProjectEulerChallenges/MultiplesOf3And5/index.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "OpenSumSquare index.html",
+            "file": "/Users/robby/VSCodeProjects/ProjectEulerChallenges/SumSquareDifference/index.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open SmallestMultiple index.html",
+            "file": "/Users/robby/VSCodeProjects/ProjectEulerChallenges/SmallestMultiple/index.html"
+        }
+    ]
+}
