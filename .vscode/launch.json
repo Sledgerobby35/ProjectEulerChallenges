@@ -5,28 +5,35 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "request": "launch",
+            "type": "chrome",
+            "name": "Open LargestPrimeFactor index.html",
+            "file": "LargestPrimeFactor/index.html"
+        },
+        
+        {
             "type": "chrome",
             "request": "launch",
             "name": "OpenFibonacci index.html",
-            "file": "/Users/robby/VSCodeProjects/ProjectEulerChallenges/EvenFibonacciNumbers/index.html"
+            "file": "EvenFibonacciNumbers/index.html"
         },
         {
             "type": "chrome",
             "request": "launch",
             "name": "OpenMultiples index.html",
-            "file": "/Users/robby/VSCodeProjects/ProjectEulerChallenges/MultiplesOf3And5/index.html"
+            "file": "MultiplesOf3And5/index.html"
         },
         {
             "type": "chrome",
             "request": "launch",
             "name": "OpenSumSquare index.html",
-            "file": "/Users/robby/VSCodeProjects/ProjectEulerChallenges/SumSquareDifference/index.html"
+            "file": "SumSquareDifference/index.html"
         },
         {
             "type": "chrome",
             "request": "launch",
             "name": "Open SmallestMultiple index.html",
-            "file": "/Users/robby/VSCodeProjects/ProjectEulerChallenges/SmallestMultiple/index.html"
+            "file": "SmallestMultiple/index.html"
         }
     ]
 }
