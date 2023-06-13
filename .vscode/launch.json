@@ -7,6 +7,12 @@
         {
             "request": "launch",
             "type": "chrome",
+            "name": "Open SpecialPythagoreanTriplet index.html",
+            "file": "SpecialPythagoreanTriplet/index.html"
+        },
+        {
+            "request": "launch",
+            "type": "chrome",
             "name": "Open 10001stPrimeNumber index.html",
             "file": "10001stPrimeNumber/index.html"
         },
