@@ -2,26 +2,41 @@
 
 $(window).on("load", function(){
     document.getElementById("genPalindrome").addEventListener("click", function(){
-        generatePalindrome();
+        generatePalindrome(999);
     })
 })
 
-function generatePalindrome(){
-    let i = 99;
+function generatePalindrome(numberA){
     let v = 90;
+    let result = [];
 
-    var result = [];
+    for(numberA; numberA > 101; numberA--){
+        for(let i = 998; i > 100; i--){
+            let checkNum = i * numberA;
+            let reverseNum = checkNum.toString().split('').reverse().join('');
+            if(checkNum == reverseNum){
+                result.push(checkNum);
+                continue;
+            } else {
+                continue;
+            }
+        }
+        if(numberA === 990){
+            result.sort();
+            console.log(result.pop());
+            return;
+        }
+    }
 
-    for(v; v < i; v++){
-        let checkNum = v * i;
-        var check = checkNum.toString().split('').reverse();
-        if(check.reverse() === checkNum.toString().split('')){
-            console.log(result);
-            console.log(check.toString().split(''));
-            continue;
+    for(v; v < numberA; v++){
+        let checkNum = v * numberA;
+        let reverseCheck = checkNum.toString().split('').reverse().join('');
+        if(checkNum == reverseCheck){
+            console.log(checkNum);
+            return;
         } else {
-            result.push(checkNum);
-            console.log(result);
+            console.log("Still Computing");
+            continue;
         }
     }
 }
