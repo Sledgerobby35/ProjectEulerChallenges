@@ -7,8 +7,14 @@
         {
             "request": "launch",
             "type": "chrome",
+            "name": "Open 10001stPrimeNumber index.html",
+            "file": "10001stPrimeNumber/index.html"
+        },
+        {
+            "request": "launch",
+            "type": "chrome",
             "name": "Open LargestPalindrome index.html",
-            "file": "LargestPalindrome/index.html",
+            "file": "LargestPalindrome/index.html"
         },
 
         {
