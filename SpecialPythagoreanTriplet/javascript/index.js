@@ -11,30 +11,32 @@ function generatePythagorean(){
     var aSquared = 0;
     var bSquared = 0;
     var cSquared = 0;
+    let finalResult = 0;
+    //itializing 'i' element for the do/while... loop
+    let i = 0;
 
-    for(let i = 1; i < 100; i++){
-        let a = i;
-        aSquared = Math.pow(i, 2);
+    do{
+        i++;
+            for(let v = 0; v < 1000; v++){
+                //intializing variables A and B
+                let a = i;
+                let b = v;
 
-        let v = 1;
+                //Setting variable values to use with Pythagorean formula
+                aSquared = Math.pow(a, 2);
+                bSquared = Math.pow(b, 2);
 
-        for(v; v < 100; v++){
+                //Initalizing C variable and setting logic to dertmine value
+                cSquared = aSquared + bSquared;
+                let c = Math.sqrt(cSquared);
+                let result = a + b + c;
 
-            let b = v;
-            bSquared = Math.pow(v, 2);
-            let c = a + b;
-            cSquared = aSquared * bSquared;
-
-            console.log(cSquared);
-
-            if(cSquared === 1024){
-                let result = (a * b * c);
-                console.log(result);
-            } else if(a + b + c === 1000) {
-                let result = (a * b * c);
-                console.log(result);
+                if(result === 1000){
+                    finalResult = a * b * c;
+                    console.log(finalResult);
+                    return;
+                }
             }
-        }
     }
-
+    while(finalResult === 0);
 }
