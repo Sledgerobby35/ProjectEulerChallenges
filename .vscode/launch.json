@@ -7,6 +7,12 @@
         {
             "request": "launch",
             "type": "chrome",
+            "name": "Open SummationOfPrimes index.html",
+            "file": "SummationOfPrimes/index.html"
+        },
+        {
+            "request": "launch",
+            "type": "chrome",
             "name": "Open LargestProduct index.html",
             "file": "LargestProductInASeries/index.html"
         },
