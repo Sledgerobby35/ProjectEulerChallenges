@@ -7,8 +7,8 @@
         {
             "request": "launch",
             "type": "chrome",
-            "name": "Open PowerDigitPrime index.html",
-            "file": "PowerDigitPrime/index.html"
+            "name": "Open PowerDigitSum index.html",
+            "file": "PowerDigitSum/index.html"
         },
         {
             "request": "launch",
