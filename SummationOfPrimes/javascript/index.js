@@ -6,26 +6,18 @@
 //ran 4 times incrementing by 500 thousand
 $(window).on('load', function(){
     document.getElementById('primesSummation').addEventListener('click', function(){
-        let result1 = 9914236195;
-        let result2 = 27636165828;
-        let result3 = 44524041233;
-        let result4 = 60839385666;
-        let resultOf3 = result2 + result3 + result4;
-        let finalResult = result1 + result2 + result3 + result4;
+        let first500ThousandPrimesSum = 9914236195;
         let first500ThousandPrimesArr = generateSumOfPrimes(500000);
-        console.log(result(first500ThousandPrimesArr), resultOf3);
-        console.log(finalResult);
-        result(generateSumOfPrimes(2000000, first500ThousandPrimesArr), resultOf3);
+        result(generateSumOfPrimes(2000000, first500ThousandPrimesArr), first500ThousandPrimesSum);
     })
 })
-function result(array, resultOf3){
+function result(array, result1){
     console.log(array);
     let result = 0;
     array.forEach(function(num){
         result += num;
     })
-    console.log(result);
-    console.log(resultOf3);
+    console.log(result + result1);
     return result;
 }
 
@@ -58,13 +50,12 @@ function isPrime(number, first500ThousandPrimesArr){
         isPrime = false;
     }
     else if(number > 500000){
-        for(let i = 41358; i > first500ThousandPrimesArr.length - 41358; i--){
-            if(number % first500ThousandPrimesArr[i] == 0){
-                console.log(first500ThousandPrimesArr[i]);
+        first500ThousandPrimesArr.forEach(function(num){
+            if(number % num == 0){
                 isPrime = false;
-                break;
+                return isPrime;
             }
-        }
+        })
     }
     else if (number > 1){
         for(let i = 2; i < number; i++){
