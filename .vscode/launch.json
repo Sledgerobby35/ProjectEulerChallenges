@@ -7,6 +7,12 @@
         {
             "request": "launch",
             "type": "chrome",
+            "name": "Open FactorialDigitSum index.html",
+            "file": "FactorialDigitSum/index.html"
+        },
+        {
+            "request": "launch",
+            "type": "chrome",
             "name": "Open PowerDigitSum index.html",
             "file": "PowerDigitSum/index.html"
         },
