@@ -7,6 +7,12 @@
         {
             "request": "launch",
             "type": "chrome",
+            "name": "Open PowerDigitPrime index.html",
+            "file": "PowerDigitPrime/index.html"
+        },
+        {
+            "request": "launch",
+            "type": "chrome",
             "name": "Open SummationOfPrimes index.html",
             "file": "SummationOfPrimes/index.html"
         },
