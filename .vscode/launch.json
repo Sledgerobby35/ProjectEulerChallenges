@@ -8,7 +8,7 @@
             "request": "launch",
             "type": "chrome",
             "name": "Open LargestSum index.html",
-            "file": "LargestSum/index.html"
+            "file": "LargeSum/index.html"
         },
         {
             "request": "launch",
