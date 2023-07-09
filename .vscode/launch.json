@@ -7,6 +7,12 @@
         {
             "request": "launch",
             "type": "chrome",
+            "name": "Open HighlyDivisibleTriangularNumber index.html",
+            "file": "HighlyDivisibleTriangularNumber/index.html"
+        },
+        {
+            "request": "launch",
+            "type": "chrome",
             "name": "Open LongestCollatzSequence index.html",
             "file": "LongestCollatzSequence/index.html"
         },
